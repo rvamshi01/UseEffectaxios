@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 const Axios = () => {
-    const [preview, setPre] = useState([])
+    const [preview, setPreview] = useState([])
     useEffect(()=>{
         axios.get("https://fakestoreapi.com/products")
-        .then(respon=>setPre(respon.data))
+        .then(respon=>setPreview(respon.data))
     },[])
   return (
     <div>
-      {pre.map((prod)=>{
+      {preview.map((prod)=>{
         return(
         <div>
             <h1>{prod.title}</h1>
