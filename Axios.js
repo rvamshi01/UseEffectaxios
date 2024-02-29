@@ -12,7 +12,7 @@ const Axios = () => {
         return(
         <div>
             <h1>{pro.title}</h1>
-            <h1>{prod.price}</h1>
+            <h1>{pro.price}</h1>
             <h1>{prod.count}</h1>
         </div>
       )})}
