@@ -8,7 +8,7 @@ const Axios = () => {
     },[])
   return (
     <div>
-      {preview.map((prod)=>{
+      {preview.map((pro)=>{
         return(
         <div>
             <h1>{prod.title}</h1>
