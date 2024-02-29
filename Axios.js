@@ -20,4 +20,4 @@ const Axios = () => {
   )
 }
 
-export default Axios
+export default Axios;
