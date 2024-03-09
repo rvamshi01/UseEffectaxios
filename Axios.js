@@ -4,7 +4,7 @@ const Axios = () => {
     const [preview, setPreview] = useState([])
     useEffect(()=>{
         axios.get("https://fakestoreapi.com/products");
-        .then(respon=>setPreview(respon.data))
+        .then(respon=>setPreview(respon.data));
     },[])
   return (
     <div>
