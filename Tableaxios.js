@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 export default function Tableaxios() {
     const [appointments,setAppointments]=useState([]);
     useEffect(()=>{
-        axios.get("https://gist.githubusercontent.com/telematum/7751eec667033ac8acd244542e464e18/raw/d4710c6fb54224a0bd316ecdc5246633aceefce5/todays.json")
+        axios.get("https://gist.githubusercontent.com/telematum/7751eec667033ac8acd244542e464e18/raw/d4710c6fb54224a0bd316ecdc5246633aceefce5/todays.json");
          .then(res=>setAppointments(res.data.appointments));
     },[])
 
