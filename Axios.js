@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-const Axios = () => {
+const Axios = () => {   
     const [preview, setPreview] = useState([])
     useEffect(()=>{
         axios.get("https://fakestoreapi.com/products")
